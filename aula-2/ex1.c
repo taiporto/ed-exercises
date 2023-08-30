@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+float calculaMedia(int tam_vetor, int *numeros);
+
 int main()
 {
   int n, *numeros, soma = 0;
@@ -17,14 +19,21 @@ int main()
     scanf("%d", &numeros[i]);
   }
 
-  for (int i = 0; i < n; i++)
+  media = calculaMedia(n, numeros);
+
+  free(numeros);
+
+  printf("Media dos valores: %.2f\n", media);
+}
+
+float calculaMedia(int tam_vetor, int *numeros)
+{
+  float soma = 0;
+
+  for (int i = 0; i < tam_vetor; i++)
   {
     soma += numeros[i];
   }
 
-  free(numeros);
-
-  media = (float)soma / n;
-
-  printf("Media dos valores: %.2f\n", media);
+  return soma / tam_vetor;
 }
