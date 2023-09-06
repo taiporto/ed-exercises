@@ -70,7 +70,7 @@ TLista *exclui(TLista *li, int i)
 {
     TLista *prox = li->prox;
 
-    if (li == NULL || li->prox == NULL)
+    if (li == NULL || prox == NULL)
     {
         return li;
     }
@@ -121,7 +121,7 @@ int main(void)
     printf("Lista 2:\n");
     imprime_lista(l2);
     printf("Lista 2 exclui:\n");
-    l2 = exclui(l2, 1);
+    l2 = exclui(l2, 3);
     imprime_lista(l2);
     return 0;
 }
