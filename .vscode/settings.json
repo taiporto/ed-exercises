@@ -1,0 +1,10 @@
+{
+  "C_Cpp.errorSquiggles": "disabled",
+  "files.associations": {
+    "*.svg": "html",
+    "*.njk": "html-nunjucks",
+    "*.html": "html",
+    "Pipfile": "toml",
+    "lista-encadeada.h": "c"
+  }
+}
