@@ -5,6 +5,7 @@
     "*.njk": "html-nunjucks",
     "*.html": "html",
     "Pipfile": "toml",
-    "lista-encadeada.h": "c"
+    "lista-encadeada.h": "c",
+    "filas-listas.h": "c"
   }
 }
